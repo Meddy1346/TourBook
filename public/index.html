@@ -1,0 +1,63 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Attraction Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Tourist Attraction Management System</h1>
+    <div id="app">
+        <!-- Registration Form -->
+        <div>
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Name" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Add Attraction Form -->
+        <div>
+            <h2>Add Attraction</h2>
+            <form id="attraction-form">
+                <input type="text" id="attraction-name" placeholder="Name" required>
+                <input type="text" id="attraction-location" placeholder="Location" required>
+                <textarea id="attraction-description" placeholder="Description" required></textarea>
+                <input type="text" id="attraction-category" placeholder="Category" required>
+                <input type="text" id="attraction-opening-hours" placeholder="Opening Hours">
+                <input type="text" id="attraction-admission-fee" placeholder="Admission Fee">
+                <input type="text" id="attraction-contact-details" placeholder="Contact Details">
+                <button type="submit">Add Attraction</button>
+            </form>
+        </div>
+
+        <!-- Search Attractions Form -->
+        <div>
+            <h2>Search Attractions</h2>
+            <form id="search-form">
+                <input type="text" id="search-location" placeholder="Location">
+                <input type="text" id="search-category" placeholder="Category">
+                <input type="text" id="search-keyword" placeholder="Keyword">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
